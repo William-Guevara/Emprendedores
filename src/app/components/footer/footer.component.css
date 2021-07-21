@@ -1,0 +1,21 @@
+footer {
+    height: 200px;
+}
+
+.nav-link {
+    color: white;
+}
+
+.text-info {
+    text-align: justify;
+}
+
+.icons {
+    height: 50px;
+    background-color: black;
+}
+
+.icons-space {
+    height: 50px;
+    background-color: #4169E1;
+}

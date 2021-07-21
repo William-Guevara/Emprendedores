@@ -1,0 +1,12 @@
+.active {
+    color: #4169E1;
+}
+
+.btn-color {
+    color: white;
+    background-color: #4169E1;
+}
+
+.trans {
+    background-color: transparent;
+}

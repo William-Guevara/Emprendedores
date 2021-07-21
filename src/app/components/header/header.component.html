@@ -1,0 +1,40 @@
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgba(29, 2, 2, 0.3);">
+
+    <a class="navbar-brand active" routerLink="/">
+        <h3 class="text-white ">Bogotá-e</h3>
+    </a>
+    <button class="navbar-toggler " type="button " data-toggle="collapse " data-target="#navbarSupportedContent " aria-controls="navbarSupportedContent " aria-expanded="false " aria-label="Toggle navigation ">
+      <span class="navbar-toggler-icon "></span>
+    </button>
+
+    <div class="collapse navbar-collapse " id="navbarSupportedContent ">
+        <ul class="navbar-nav mr-auto ">
+
+        </ul>
+        <ul class="navbar-nav justify-content-end ">
+            <li class="nav-item ">
+                <a class="text-white nav-link" routerLink="/" routerLinkActive="active">Inicio</a>
+            </li>
+            <li class="nav-item ">
+                <a class="text-white nav-link" routerLink="/emprendedores" routerLinkActive="active">Emprendedores</a>
+            </li>
+            <li class="nav-item ">
+                <a class="text-white nav-link" routerLink="/Bogota" routerLinkActive="active">Bogotá-e</a>
+            </li>
+            <li class="nav-item ">
+                <a class="text-white nav-link" routerLink="/team" routerLinkActive="active">Equipo</a>
+            </li>
+            <li class="nav-item ">
+                <a class="text-white nav-link" routerLink="/contact" routerLinkActive="active">Contacto</a>
+            </li>
+
+        </ul>
+
+        <button class="btn btn-color my-2 my-sm-0 " type="text ">FAQ</button>
+    </div>
+</nav>
+
+
+<router-outlet></router-outlet>
+
+<app-footer></app-footer>

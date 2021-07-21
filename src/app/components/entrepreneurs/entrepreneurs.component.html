@@ -1,0 +1,80 @@
+<div class="emprendedores">
+    <div class="container">
+        <br>
+        <h2 class="text-primary">Emprendedores</h2>
+        <br>
+        <div class="table-responsive">
+            <table class="table">
+                <tbody>
+                    <tr *ngFor="let item of emprendedores$ | async">
+                        <th scope="row"></th>
+                        <td>{{ item.date }}</td>
+                        <td>{{ item.name }}</td>
+                        <td>{{ item.entrepreneurship }}</td>
+                        <td>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" (click)="onOpenModal(item)">
+                            Ver más
+                          </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <br>
+    </div>
+</div>
+
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="tituloModal modal-title" id="exampleModalLabel">Información registrada del emprendedor</h1>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+            </div>
+            <div class="modal-body">
+                <form [formGroup]="myFormModal" autocomplete="off">
+                    <div class="row">
+                        <div class="col-6">
+
+                            <div class="mb-3">
+                                <label class="form-label">Nombres</label>
+                                <input class="form-control" type="text" formControlName="name">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Emprendimiento</label>
+                                <input class="form-control" type="text" formControlName="entrepreneurship">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Correo electronico</label>
+                                <input class="form-control" type="email" formControlName="email">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Telefono</label>
+                                <input class="form-control" type="text" formControlName="phone">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Dirección</label>
+                                <input class="form-control" type="text" formControlName="address">
+                            </div>
+                        </div>
+
+                        <div class="col-6">
+                            <div class="form-floating">
+                                <label for="floatingTextarea">Información del emprendedor</label>
+                                <textarea class="form-control" rows="15" formControlName="detail"></textarea>
+                            </div>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,47 @@
+.contentido {
+    height: 560px;
+    width: 100%;
+    min-height: 560px;
+}
+
+.texto-medio {
+    position: absolute;
+    color: white;
+    margin-top: 165px
+}
+
+.texto-blue {
+    position: absolute;
+    color: white;
+}
+
+.img-contenido {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -100;
+    opacity: 0.7;
+}
+
+.btn-trans {
+    background-color: transparent;
+    border-color: white;
+}
+
+.info {
+    margin-top: -30px;
+    height: 300px;
+    background-color: #4169E1;
+}
+
+.img-info {
+    height: 200px;
+    width: 600px;
+}
+
+.btn-color {
+    color: white;
+    background-color: #4169E1;
+}

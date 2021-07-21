@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "emprendedores-2be29": {
+      "hosting": {
+        "emprende": [
+          "emprendedores-2be29"
+        ]
+      }
+    }
+  }
+}
